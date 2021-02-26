@@ -1,0 +1,131 @@
+/* reset css code
+   http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*ADD OWN CODE FROM HERE */
+
+.about_me {
+  padding: 10px;
+}
+
+.about_me__picture {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*define max and min-height and make it centered*/
+}
+
+.expertise {
+  text-align: center;
+}
+
+.projects {
+  width: 100%;
+}
+
+.projects__card {
+  background-color: grey;
+  margin: 2px;
+  height: 100px;
+}
+
+@media (min-width: 600px) {
+  .about_me {
+    display: flex;
+  }
+  .about_me__picture {
+    width: 50%;
+    padding-right: 10px;
+  }
+  .expertise {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+
+/*
+
+
+
+
+
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  height: 100px;
+}
+
+.projects__card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: grey;
+  margin: 2px;
+  height: 100px;
+  width: 33%;
+}
+
+/*@media screen and (max-width: 500px) {
+  .projects__card {
+    width: 100%;
+  }
+}*/
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  background-color: lightgray;
+}
